@@ -623,7 +623,7 @@ async function sendMessage() {
 
   try {
     // 1. Get text reply from MiniMax LLM
-    const chatRes = await fetch('https://api.minimaxi.chat/v1/text/chatcompletion_v2', {
+    const chatRes = await fetch('https://api.minimax.io～/v1/text/chatcompletion_v2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -652,7 +652,7 @@ async function sendMessage() {
 
     if (voiceEnabled) {
       // 2. Convert to speech
-      const ttsRes = await fetch(`https://api.minimaxi.chat/v1/t2a_v2?GroupId=${GROUP_ID}`, {
+      const ttsRes = await fetch(`https://api.minimax.io～/v1/t2a_v2?GroupId=${GROUP_ID}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
